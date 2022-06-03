@@ -11,7 +11,7 @@ using namespace std;
 
 
 
-// A function for displaying an error message
+// A function for displaying anerror message
 void error(const char *msg)
 {
     perror(msg);
