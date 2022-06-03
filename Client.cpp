@@ -10,14 +10,15 @@
 using namespace std;
 
 
-// Our Function defenition
+
+// A function for displaying an error message
 void error(const char *msg)
 {
     perror(msg);
     exit(0);
 }
 
-
+// A function for sending a message to the server
 void sendMsg(int server)
 {
     while (1){
@@ -27,7 +28,7 @@ void sendMsg(int server)
     }
 }
 
-
+// A function for reciving a message from the server and printing it to the console
 void reciveMsg(int server, string client)
 {
     while(1){
@@ -39,7 +40,7 @@ void reciveMsg(int server, string client)
 }
 
 
-// Our Main FUnction
+// The main function
 int main(int argc, char *argv[])
 {
     int sockfd, portno, n,name;
