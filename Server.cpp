@@ -21,7 +21,7 @@ int main(int argc, char *argv[]){
     char userName[1024] {0};
 
 
-    // Creating Socket
+    // Creating Socket object
     server = socket(AF_INET, SOCK_STREAM, 0);
 
     if (server < 0)
